@@ -1,3 +1,43 @@
 
 2017-12-06 11:46:54
 [WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: The index for data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/option.data is out of date, probably due to an unclean shutdown. Deleting index file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/option.index
+
+2017-12-06 15:52:38
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.DiskStorePathManager.resolveAndLockIfNeeded()]: diskStorePath '/Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache' is already used by an existing CacheManager either in the same VM or in a different process.
+The diskStore path for this CacheManager will be set to /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/ehcache_auto_created3036946140828301987diskstore.
+To avoid this warning consider using the CacheManager factory methods to create a singleton CacheManager or specifying a separate ehcache configuration (ehcache.xml) for each CacheManager instance.
+
+2017-12-06 15:52:38
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: Data in persistent disk stores is ignored for stores from automatically created directories.
+Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
+Deleting data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/ehcache_auto_created3036946140828301987diskstore/token.data
+
+2017-12-06 15:52:38
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: Data in persistent disk stores is ignored for stores from automatically created directories.
+Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
+Deleting data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/ehcache_auto_created3036946140828301987diskstore/jpress.data
+
+2017-12-06 15:52:38
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: Data in persistent disk stores is ignored for stores from automatically created directories.
+Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
+Deleting data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/ehcache_auto_created3036946140828301987diskstore/action_wechat.data
+
+2017-12-06 15:52:38
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: Data in persistent disk stores is ignored for stores from automatically created directories.
+Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
+Deleting data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/ehcache_auto_created3036946140828301987diskstore/session.data
+
+2017-12-06 15:52:38
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: Data in persistent disk stores is ignored for stores from automatically created directories.
+Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
+Deleting data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/ehcache_auto_created3036946140828301987diskstore/option.data
+
+2017-12-06 15:52:38
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: Data in persistent disk stores is ignored for stores from automatically created directories.
+Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
+Deleting data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/ehcache_auto_created3036946140828301987diskstore/action.data
+
+2017-12-06 15:52:38
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: Data in persistent disk stores is ignored for stores from automatically created directories.
+Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
+Deleting data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/ehcache_auto_created3036946140828301987diskstore/action_mobile.data

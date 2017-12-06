@@ -15,7 +15,9 @@
  */
 package io.jpress.menu;
 
+import java.util.Arrays;
 import java.util.LinkedList;
+import java.util.List;
 
 import io.jpress.core.addon.HookInvoker;
 import io.jpress.message.MessageKit;
@@ -32,15 +34,21 @@ public class MenuManager {
 		return manager;
 	}
 
-	public String generateHtml() {
+	public String generateHtml(String userType) {
 		if (menuGroups.isEmpty()) {
 			MessageKit.sendMessage(ACTION_INIT_MENU, this);
 		}
 
 		HookInvoker.menuInitBefore(this);
 
+		List<String> listIgnored = Arrays.asList("user","template","option");
+		
 		StringBuilder htmlBuilder = new StringBuilder();
 		for (MenuGroup group : menuGroups) {
+			if (!"administrtor".equals(userType)){
+				if(listIgnored.contains(group.getId()))
+					continue;
+			}	
 			htmlBuilder.append(group.generateHtml());
 		}
 
