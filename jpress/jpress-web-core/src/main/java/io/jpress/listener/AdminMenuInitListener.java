@@ -43,15 +43,15 @@ public class AdminMenuInitListener implements MessageListener {
 		initModuleMenuGroup(menuMnager);
 
 		menuMnager.addMenuGroup(createAttachmentMenuGroup());
-		menuMnager.addMenuGroup(createWechatMenuGroup());
+//		menuMnager.addMenuGroup(createWechatMenuGroup());
 
 		menuMnager.addMenuGroup(MenuGroup.createBlockGroup());
 
 		menuMnager.addMenuGroup(createUserMenuGroup());
 		menuMnager.addMenuGroup(createTemplateMenuGroup());
-		menuMnager.addMenuGroup(createAddonMenuGroup());
+//		menuMnager.addMenuGroup(createAddonMenuGroup());
 		menuMnager.addMenuGroup(createSettingMenuGroup());
-		menuMnager.addMenuGroup(createToolsMenuGroup());
+//		menuMnager.addMenuGroup(createToolsMenuGroup());
 	}
 
 	public void initModuleMenuGroup(MenuManager menuMnager) {
@@ -146,14 +146,14 @@ public class AdminMenuInitListener implements MessageListener {
 		MenuGroup group = new MenuGroup("option", "fa fa-cog", "设置");
 		{
 			group.addMenuItem(new MenuItem("list", "/admin/option/web", "常规"));
-			group.addMenuItem(new MenuItem("edit", "/admin/option/comment", "评论"));
-			group.addMenuItem(new MenuItem("n", "/admin/option/notification", "通知"));
+//			group.addMenuItem(new MenuItem("edit", "/admin/option/comment", "评论"));
+//			group.addMenuItem(new MenuItem("n", "/admin/option/notification", "通知"));
 			group.addMenuItem(new MenuItem("seo", "/admin/option/seo", "SEO"));
 			group.addMenuItem(new MenuItem("watermark", "/admin/option/watermark", "水印"));
-			group.addMenuItem(new MenuItem("url", "/admin/option/url", "连接形式"));
-			group.addMenuItem(new MenuItem("reg", "/admin/option/register", "登录注册"));
-			group.addMenuItem(new MenuItem("cdn", "/admin/option/cdn", "CDN加速"));
-			group.addMenuItem(new MenuItem("api", "/admin/api", "API应用"));
+//			group.addMenuItem(new MenuItem("url", "/admin/option/url", "连接形式"));
+//			group.addMenuItem(new MenuItem("reg", "/admin/option/register", "登录注册"));
+//			group.addMenuItem(new MenuItem("cdn", "/admin/option/cdn", "CDN加速"));
+//			group.addMenuItem(new MenuItem("api", "/admin/api", "API应用"));
 		}
 
 		return group;

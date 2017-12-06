@@ -47,7 +47,7 @@ public class AdminInterceptor implements Interceptor {
 
 		User user = InterUtils.tryToGetUser(inv);
 		
-		if (user != null && user.isAdministrator()) {
+		if (user != null ) { //&& user.isAdministrator()
 			controller.setAttr("_menu_html", MenuManager.me().generateHtml());
 			inv.invoke();
 			return;

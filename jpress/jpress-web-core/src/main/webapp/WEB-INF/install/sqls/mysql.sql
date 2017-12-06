@@ -226,7 +226,7 @@ CREATE TABLE `{table_prefix}user` (
   `telephone` varchar(32) DEFAULT NULL COMMENT '固定电话',
   `amount` decimal(10,2) unsigned DEFAULT '0.00' COMMENT '金额（余额）',
   `gender` varchar(16) DEFAULT NULL COMMENT '性别',
-  `role` varchar(32) DEFAULT 'visitor' COMMENT '权限',
+  `role` varchar(32) DEFAULT 'editor' COMMENT '权限',
   `signature` varchar(2048) DEFAULT NULL COMMENT '签名',
   `content_count` int(11) unsigned DEFAULT '0' COMMENT '内容数量',
   `comment_count` int(11) unsigned DEFAULT '0' COMMENT '评论数量',
