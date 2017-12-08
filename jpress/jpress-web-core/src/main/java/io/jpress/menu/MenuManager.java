@@ -45,7 +45,7 @@ public class MenuManager {
 		
 		StringBuilder htmlBuilder = new StringBuilder();
 		for (MenuGroup group : menuGroups) {
-			if (!"administrtor".equals(userType)){
+			if (!"administrator".equals(userType)){
 				if(listIgnored.contains(group.getId()))
 					continue;
 			}	

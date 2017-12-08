@@ -41,3 +41,9 @@ Deleting data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpres
 [WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: Data in persistent disk stores is ignored for stores from automatically created directories.
 Remove diskPersistent or resolve the conflicting disk paths in cache configuration.
 Deleting data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/ehcache_auto_created3036946140828301987diskstore/action_mobile.data
+
+2017-12-06 16:37:34
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: The index for data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/option.data is out of date, probably due to an unclean shutdown. Deleting index file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/option.index
+
+2017-12-08 14:05:59
+[WARN]-[Thread: localhost-startStop-1]-[net.sf.ehcache.store.disk.DiskStorageFactory.<init>()]: The index for data file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/option.data is out of date, probably due to an unclean shutdown. Deleting index file /Users/soshewang/Documents/java-workspace/jpress/jpress/jpress-web/target/jpress-web-1.0/WEB-INF/classes/.ehcache/option.index

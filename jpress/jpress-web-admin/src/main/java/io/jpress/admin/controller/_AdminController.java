@@ -15,14 +15,17 @@
  */
 package io.jpress.admin.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import com.jfinal.aop.Before;
 import com.jfinal.aop.Clear;
+import com.jfinal.log.Log;
 import com.jfinal.plugin.activerecord.Page;
 
 import io.jpress.Consts;
 import io.jpress.core.JBaseController;
+import io.jpress.core.JpressConfig;
 import io.jpress.core.interceptor.ActionCacheClearInterceptor;
 import io.jpress.interceptor.AdminInterceptor;
 import io.jpress.interceptor.UCodeInterceptor;
@@ -45,11 +48,23 @@ import io.jpress.utils.StringUtils;
 @RouterMapping(url = "/admin", viewPath = "/WEB-INF/admin")
 @RouterNotAllowConvert
 public class _AdminController extends JBaseController {
-
+	
 	@Before(ActionCacheClearInterceptor.class)
 	public void index() {
 		
-		List<TplModule> moduleList = TemplateManager.me().currentTemplateModules();
+		List<TplModule> tmpList = TemplateManager.me().currentTemplateModules();
+		List<TplModule> moduleList = new ArrayList<TplModule>();
+		User user = getLoginedUser();
+		for(TplModule m : tmpList){
+			if(!user.isAdministrator()){
+				String moduleName = m.getName();
+				if ("page".equals(moduleName)){
+					continue;
+				}
+			}
+			moduleList.add(m);
+		}
+		
 		setAttr("modules", moduleList);
 
 		if (moduleList != null && moduleList.size() > 0) {
